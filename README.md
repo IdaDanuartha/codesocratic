@@ -1,18 +1,18 @@
-# 🦆 CodeSocratic
+# CodeSocratic
 
 > A Socratic TypeScript/JavaScript code analyzer that asks the right questions to improve your code.
 
 CodeSocratic helps you think critically about your code by asking insightful questions instead of just pointing out errors. Inspired by the [Socratic Method](https://en.wikipedia.org/wiki/Socratic_method) and [Rubber Duck Debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
-## ✨ Features
+## Features
 
-- 🤔 **Socratic questioning** - Learn by thinking, not just fixing
-- 🎯 **Smart analysis** - Detects common anti-patterns in TypeScript/JavaScript
-- 🎭 **Multiple tones** - Choose between formal, friendly, or roasting feedback
-- 🚀 **Zero config** - Works out of the box
-- 📦 **ESM-first** - Modern JavaScript package
+- **Socratic questioning** - Learn by thinking, not just fixing
+- **Smart analysis** - Detects common anti-patterns in TypeScript/JavaScript
+- **Multiple tones** - Choose between formal, friendly, or roasting feedback
+- **Zero config** - Works out of the box
+- **ESM-first** - Modern JavaScript package
 
-## 📦 Installation
+## Installation
 
 ### Global Installation
 ```bash
@@ -29,7 +29,7 @@ npx codesocratic your-file.ts
 npm install --save-dev codesocratic
 ```
 
-## 🚀 Usage
+## Usage
 
 ### CLI
 ```bash
@@ -88,7 +88,7 @@ console.log(result);
 }
 ```
 
-## 🎭 Tones
+## Tones
 
 Choose the feedback style that works best for you:
 
@@ -98,7 +98,7 @@ Choose the feedback style that works best for you:
 | `friendly` | Conversational and supportive (default) | Learning, collaboration |
 | `roasting` | Humorous and sarcastic | Self-review, team fun |
 
-## 📋 Rules
+## Rules
 
 CodeSocratic includes the following built-in rules:
 
@@ -109,7 +109,7 @@ CodeSocratic includes the following built-in rules:
 | `no-side-effects` | info | Questions functions with misleading names |
 | `no-magic-numbers` | info | Asks about unexplained numeric literals |
 
-## 📖 API Reference
+## API Reference
 
 ### `analyzeCode(code: string, options?: AnalysisOptions): AnalysisResult`
 
@@ -142,7 +142,7 @@ interface Question {
 }
 ```
 
-## 🛠️ Integration Examples
+## Integration Examples
 
 ### With npm scripts
 ```json
@@ -169,7 +169,7 @@ jobs:
       - run: npx codesocratic src/**/*.ts
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -179,18 +179,18 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 MIT © Ida Danuartha
 
-## 🙏 Credits
+## Credits
 
 Inspired by:
 - The Socratic Method of teaching through questioning
 - Rubber Duck Debugging technique
 - The need for better code learning tools
 
-## 📬 Support
+## Support
 
 - 📧 Email: danuart14.dev@gmail.com
 - 🐛 Issues: [GitHub Issues](https://github.com/yourusername/codesocratic/issues)
@@ -198,4 +198,4 @@ Inspired by:
 
 ---
 
-**Made with ❤️ and 🦆 by Ida Danuartha**
+**Made with ❤️ by Ida Danuartha**
