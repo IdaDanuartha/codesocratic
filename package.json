@@ -1,0 +1,61 @@
+{
+  "name": "codesocratic",
+  "version": "1.0.0",
+  "description": "A Socratic TypeScript/JavaScript code analyzer that asks questions instead of giving answers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "codesocratic": "./bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepublishOnly": "npm run build",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "codesocratic",
+    "socratic-method",
+    "code-analyzer",
+    "linter",
+    "typescript",
+    "javascript",
+    "code-review",
+    "rubber-duck-debugging",
+    "static-analysis"
+  ],
+  "author": "Ida Danuartha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdaDanuartha/codesocratic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IdaDanuartha/codesocratic/issues"
+  },
+  "homepage": "https://github.com/IdaDanuartha/codesocratic#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^6.15.0",
+    "@typescript-eslint/typescript-estree": "^8.18.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
